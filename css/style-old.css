@@ -90,12 +90,12 @@
   gap: 40px;
 }
 /* Main styles */
-
 /* Qualities */
-.qualities {
+
+/* .qualities {
   padding: 120px 0;
   background: var(--white);
-}
+} */
 .qualities-list {
   display: flex;
   gap: 24px;
