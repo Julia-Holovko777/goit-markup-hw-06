@@ -1,6 +1,6 @@
 /* Logo */
 
-.logo {
+/* .logo {
   color: var(--iris);
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
@@ -18,7 +18,7 @@
 
 .logo-white {
   color: var(--cloud);
-}
+} */
 
 /* Header styles */
 
@@ -244,7 +244,7 @@
 
 /*Customers */
 
-.customers {
+/* .customers {
   padding: 120px 0;
 }
 .customers-list {
@@ -278,7 +278,8 @@
 }
 .customers-item-link:hover .customers-icon {
   fill: var(--ocean);
-}
+} */
+
 /* Footer */
 .footer {
   background: var(--navyblue);
@@ -290,16 +291,15 @@
 }
 .footer-logo-container {
   margin-right: 120px;
-}
-.footer .logo {
   display: inline-block;
   margin-bottom: 16px;
 }
+
 .footer-text {
   color: var(--cloud);
   font-size: 16px;
   font-weight: 400;
-  line-height: 1.5; /* 150% */
+  line-height: 1.5;
   letter-spacing: 0.02em;
   max-width: 264px;
 }
@@ -311,7 +311,7 @@
   color: var(--white);
   font-size: 16px;
   font-weight: 500;
-  line-height: 1.5; /* 150% */
+  line-height: 1.5;
   letter-spacing: 0.02em;
   margin-bottom: 16px;
 }
@@ -396,6 +396,7 @@
 }
 .footer-form-icon {
 }
+
 /* Modal window*/
 .backdrop {
   position: fixed;
@@ -459,7 +460,7 @@
   display: block;
   font-size: 16px;
   font-weight: 500;
-  line-height: 1.5; /* 150% */
+  line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--navyblue, #2e2f42);
   text-align: center;
@@ -484,7 +485,7 @@ textarea {
   margin-bottom: 4px;
   color: var(--lightslate);
   font-size: 12px;
-  line-height: 1.17; /* 116.667% */
+  line-height: 1.17;
   letter-spacing: 0.04em;
 }
 
