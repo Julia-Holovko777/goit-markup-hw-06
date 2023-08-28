@@ -281,7 +281,7 @@
 } */
 
 /* Footer */
-.footer {
+/* .footer {
   background: var(--navyblue);
   padding: 100px 0;
 }
@@ -361,7 +361,7 @@
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   font-size: 12px;
   font-weight: 400;
-  line-height: 1.5; /* 200% */
+  line-height: 1.5;
   letter-spacing: 0.04em;
 }
 .footer-form-imput::placeholder {
@@ -384,7 +384,7 @@
   text-align: center;
   font-size: 16px;
   font-weight: 500;
-  line-height: 1.5; /* 150% */
+  line-height: 1.5;
   letter-spacing: 0.04em;
   fill: currentColor;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -395,7 +395,7 @@
   background-color: var(--ocean);
 }
 .footer-form-icon {
-}
+} */
 
 /* Modal window*/
 .backdrop {
