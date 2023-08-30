@@ -398,7 +398,7 @@
 } */
 
 /* Modal window*/
-.backdrop {
+/* .backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -468,7 +468,8 @@
   margin-bottom: 16px;
 }
 /* Modal form */
-input {
+
+/* input {
   font-family: inherit;
 }
 textarea {
@@ -556,7 +557,7 @@ textarea {
   display: block;
   color: var(--lightslate);
   font-size: 12px;
-  line-height: 1.17; /* 116.667% */
+  line-height: 1.17;
   letter-spacing: 0.04em;
 }
 
@@ -599,7 +600,7 @@ input[type='checkbox']:checked + label span {
   cursor: pointer;
   font-size: 16px;
   font-weight: 500;
-  line-height: 1.5; /* 150% */
+  line-height: 1.5;
   letter-spacing: 0.04em;
   color: var(--white);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
@@ -609,7 +610,11 @@ input[type='checkbox']:checked + label span {
 .modal-form-btn:hover,
 .modal-form-btn:hover {
   background-color: var(--ocean);
-}
+} */
+*/
+
+/* Mobile menu */
+
 
 /* Portfolio page*/
 
