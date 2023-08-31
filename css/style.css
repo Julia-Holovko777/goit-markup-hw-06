@@ -59,6 +59,7 @@ button {
   overflow: hidden;
 }
 .container {
+  min-width: 320px;
   max-width: 428px;
   margin: 0 auto;
   padding: 0 16px;
@@ -158,31 +159,55 @@ button {
 }
 
 .contact {
+  align-items: center;
 }
 .contact-list {
   display: flex;
-  gap: 40px;
 }
 @media (max-width: 767.98px) {
   .contact-list {
     display: none;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .contact-list {
+    flex-direction: column;
+    gap: 12px;
+    padding: 16px 0;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .contact-list {
+    flex-direction: row;
+    gap: 40px;
+    padding: 0;
+  }
+}
+
 .contact-link {
   display: flex;
-  padding-top: 24px;
-  padding-bottom: 24px;
   font-style: normal;
-  color: var(--font-color);
-  font-size: 16px;
+  color: var(--slate);
+  font-size: 12px;
   font-weight: 400;
-  line-height: 1.5; /* 150% */
-  letter-spacing: 0.02em;
-  margin-left: auto;
+  line-height: 1.16;
+  letter-spacing: 0.04em;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.contact-mail:hover,
-.contact-mail:focus {
+@media screen and (min-width: 1158px) {
+  .contact-link {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    margin-left: auto;
+  }
+}
+
+.contact-link:hover,
+.contact-link:focus {
   color: var(--ocean);
 }
 
@@ -978,8 +1003,8 @@ input[type='checkbox']:checked + label span {
   transform: translateX(0);
 }
 .menu-toggle {
-  min-height: 40px;
-  min-width: 40px;
+  min-height: 22px;
+  min-width: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -988,7 +1013,6 @@ input[type='checkbox']:checked + label span {
   background-color: transparent;
   cursor: pointer;
   border: none;
-  border-radius: 50%;
   outline: none;
 }
 
