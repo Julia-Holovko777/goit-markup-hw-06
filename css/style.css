@@ -133,7 +133,7 @@ button {
   display: flex;
   font-size: 16px;
   font-weight: 500;
-  line-height: 1.5; /* 150% */
+  line-height: 1.5;
   letter-spacing: 0.02em;
   padding-top: 24px;
   padding-bottom: 24px;
@@ -385,7 +385,7 @@ button {
     text-align: left;
   }
 }
-@media (max-width: 1157.9px) {
+@media (max-width: 1157.98px) {
   .qualities-list-wrapper {
     display: none;
   }
@@ -674,7 +674,10 @@ button {
   align-items: center;
   gap: 16px;
 }
-
+.footer-form-label {
+  max-width: 398px;
+  width: 100%;
+}
 .footer-form-imput {
   width: 398px;
   height: 40px;
@@ -990,9 +993,10 @@ input[type='checkbox']:checked + label span {
   position: fixed;
   top: 0;
   left: 0;
+  min-width: 428px;
+  max-height: 796px;
   width: 100vw;
   height: 100vh;
-  padding: 80px 40px 40px 40px;
   background-color: var(--white);
   z-index: 999;
   transform: translateX(100%);
@@ -1038,8 +1042,25 @@ input[type='checkbox']:checked + label span {
   top: 24px;
   right: 24px;
 }
-
-.mobile-menu {
+.mobile-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  height: 100%;
+  padding: 80px 35px 40px 40px;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  background-color: var(--whait-color);
+  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+  overflow: scroll;
+}
+.mobile-nav {
+  margin-bottom: auto;
 }
 .mobile-menu-item:not(:last-child) {
   margin-bottom: 40px;
@@ -1048,13 +1069,53 @@ input[type='checkbox']:checked + label span {
   font-size: 36px;
   font-weight: 700;
   line-height: 1.11;
-  letter-spacing: 0.02px;
-  text-transform: capitalize;
+  letter-spacing: 0.02em;
+  position: relative;
   display: block;
   color: var(--navyblue);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mobile-menu-link:active {
   color: var(--ocean);
 }
+.menu-contact {
+  margin-bottom: 48px;
+}
 .mobile-contact {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 40px;
+}
+.mobile-contact-link {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--slate);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile-contact-link:hover,
+.mobile-contact-link:focus,
+.mobile-contact-link:active {
+  color: var(--iris);
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.11;
+}
+@media screen and (max-width: 427.98px) {
+  .menu-add-page-mailto:hover,
+  .menu-add-page-mailto:focus {
+    font-size: 20px;
+    font-weight: 500;
+  }
+}
+.mobile-social-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 56px;
+}
+.mobile-social-item {
+  flex-basis: calc((100% - 56 * 3) / 4);
+  width: 40px;
+  height: 40px;
 }
