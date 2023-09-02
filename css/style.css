@@ -906,7 +906,6 @@ button {
   letter-spacing: 0.02em;
   color: var(--navyblue, #2e2f42);
   text-align: center;
-  width: 360px;
   margin-bottom: 16px;
 }
 /* Modal form */
